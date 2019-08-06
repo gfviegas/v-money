@@ -2,7 +2,7 @@ import defaults from './options'
 
 function format (input, opt = defaults) {
   if (opt.allowBlank && !input) {
-    return input // if input is null, '', or 0, simply return it's value
+    return input
   }
 
   if (typeof input === 'number') {
@@ -21,7 +21,7 @@ function format (input, opt = defaults) {
 
 function unformat(input, precision, opt = defaults) {
   if (opt.allowBlank && !input) {
-    return input // if input is null, '', or 0, simply return it's value
+    return input
   }
 
   var negative = input.indexOf('-') >= 0 ? -1 : 1
