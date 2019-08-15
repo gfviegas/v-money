@@ -1,9 +1,5 @@
 <template lang="html">
-  <input type="tel"
-         :value="formattedValue"
-         @change="change"
-         v-money="{precision, decimal, thousands, prefix, suffix, allowBlank}"
-         class="v-money" />
+  <input type="tel" :value="formattedValue" @change="change" v-money="{precision, decimal, thousands, prefix, suffix, allowBlank}" class="v-money" />
 </template>
 
 <script>

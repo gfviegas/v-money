@@ -1,8 +1,8 @@
 export default {
-  prefix: '',
+  prefix: 'R$ ',
   suffix: '',
-  thousands: ',',
-  decimal: '.',
+  thousands: '.',
+  decimal: ',',
   precision: 2,
-  allowBlank: false
+  allowBlank: true
 }

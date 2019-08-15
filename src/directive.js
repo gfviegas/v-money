@@ -1,4 +1,4 @@
-import {format, unformat, setCursor, event} from './utils'
+import { format, unformat, setCursor, event } from './utils'
 import assign from './assign'
 import defaults from './options'
 
@@ -17,7 +17,7 @@ export default function (el, binding) {
   }
 
   el.onkeydown = function (e) {
-    var backspacePressed = e.which == 8 || e.which == 46
+    var backspacePressed = e.which === 8 || e.which === 46
     var atEndPosition = (el.value.length - el.selectionEnd) === 0
     if (opt.allowBlank && backspacePressed && atEndPosition && (unformat(el.value, 0) === 0)) {
       el.value = ''
